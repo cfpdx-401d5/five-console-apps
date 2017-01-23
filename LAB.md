@@ -91,6 +91,7 @@ power-of.js
   fizz-buzz.test.js
   power-of.test.js
 .eslintrc
+.gitignore
 ```
 
 Install `mocha` and `eslint` globally via:
