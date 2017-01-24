@@ -7,8 +7,13 @@ describe('add-one', function() {
     assert.equal(actual, 4);
   });
 
-  it('confirms that a non-integer argument will return "NaN"', function() {
+  it('is "NaN" when a non-integer argument is entered', function() {
     var actual = run(['add-one.js', 'cat']);
+    assert.equal(actual, 'NaN');
+  });
+
+  it('is "NaN" when no argument is entered', function() {
+    var actual = run(['add-one.js']);
     assert.equal(actual, 'NaN');
   });
 });
