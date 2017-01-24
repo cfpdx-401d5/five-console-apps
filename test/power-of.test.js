@@ -8,6 +8,6 @@ describe('power-of app', function() {
             ['power-of.js', '3', '3'],
             { encoding: 'utf8' }
         );
-        assert.equal(output, 27)
+        assert.equal(output, 27);
     });
-})
+});
