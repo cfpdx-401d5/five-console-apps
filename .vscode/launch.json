@@ -4,9 +4,9 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/power-of.js",
+            "program": "${workspaceRoot}/day-greet.js",
             "cwd": "${workspaceRoot}",
-            "args": ["2", "3"]
+            "args": ["Monkee", "1700"]
         },
         {
             "type": "node",
