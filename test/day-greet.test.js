@@ -7,7 +7,7 @@ describe('day-greet app', function() {
             'node',
             ['day-greet.js', 'brigitte', '14:58'],
             { encoding: 'utf8' }
-        );
+        ); //need to make a run function
         assert.equal(output, 'good afternoon brigitte');
     });
 });
