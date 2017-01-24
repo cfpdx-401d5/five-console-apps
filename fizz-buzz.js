@@ -11,7 +11,7 @@ for ( var i = 1; i <= n; i++ ) {
     } else {
         array.push(i + '\n');
     }
-};
+}
 
 var result = array.join('');
 

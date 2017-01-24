@@ -1,14 +1,10 @@
 
 var assert = require('assert');
-var child_process = require('child_process');
+var run = require('./run.js');
 
 describe('add-one app', function() {
     it('adds 1 to argument', function() {
-        var output = child_process.execFileSync(
-            'node',
-            ['add-one.js', '3'],
-            { encoding: 'utf8' }
-        );
+        var output = run(['add-one.js', '3']);
         assert.equal(output, 4);
     });
 });

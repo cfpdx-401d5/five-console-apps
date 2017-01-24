@@ -1,13 +1,9 @@
 var assert = require('assert');
-var child_process = require('child_process');
+var run = require('./run.js');
 
 describe('fizz-buzz app', function() {
     it('outputs fizz-buzz count to arg', function() {
-        var output = child_process.execFileSync(
-            'node',
-            ['fizz-buzz.js', '16'],
-            { encoding: 'utf8' }
-        );
+        var output = run(['fizz-buzz.js', '16']);
         assert.equal(output, 
             '1' + '\n' +
             '2' + '\n' +
@@ -25,6 +21,6 @@ describe('fizz-buzz app', function() {
             '14' + '\n' +
             'fizzbuzz' + '\n' +
             '16' + '\n'
-        )
+        );
     });
-})
+});
