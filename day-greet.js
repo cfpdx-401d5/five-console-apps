@@ -1,18 +1,18 @@
 var time = process.argv[2]; 
+var name = process.argv[3];
 
 var split = time.split(':');
 
 var number = parseInt(split);
 
-function dayGreet (number) {
+function dayGreet (name, number) {
     if (number < 1200)
-        process.stdout.write('Good Morning, Claire');
+        return (`Good Morning ${name}`);
     else if (number < 1700)
-        process.stdout.write('Good Afternoon, Claire');
+        return (`Good Afternoon ${name}`);
     else 
-        process.stdout.write('Good Evening, Claire');
+        return (`Good Evening ${name}`);
 }
 
-process.stdout.write(number.toString());
+process.stdout.write(dayGreet(name, number));
 
-dayGreet(number);
