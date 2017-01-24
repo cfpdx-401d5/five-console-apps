@@ -1,15 +1,16 @@
 // take an argument n and outputs fizz buzz count to n 
-var number = parseInt(process.argv[2]);
-var fizz = number % 3;
-var buzz = number % 5;
-// for (i = 0; i <= 16; i++) {
-if (fizz == 0) {
-  process.stdout.write('fizz');
+var n = process.argv[2];
+
+for (var i = 1; i <= n; i++) {
+
+  if (i % 3 === 0) {
+    process.stdout.write('fizz' + '\n');
+  }
+  else if (i % 5 === 0) {
+    process.stdout.write('buzz' + '\n');
+  }
+  else {
+    process.stdout.write(i + '\n');
+  }
+
 }
-if (buzz == 0) {    
-  process.stdout.write('buzz');
-}
-else {
-  process.stdout.write(`${number}`);
-}
-// }
