@@ -1,5 +1,4 @@
-
-function addOne(x) {
+exports.addOne = function (x) {
     return x + 1;
 };
 

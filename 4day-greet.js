@@ -5,8 +5,4 @@ function dayGreet(name, time) {
         process.stdout.write(`good afternoon ${name}`);
     } else 
         process.stdout.write(`good evening ${name}`);
-};
-
-
-
-
+}
