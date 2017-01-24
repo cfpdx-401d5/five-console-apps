@@ -1,19 +1,37 @@
+// {
+//   "version": "0.2.0",
+//   "configurations": [
+//     {
+//       "type": "node",
+//       "request": "launch",
+//       "name": "Launch Program",
+//       "runtimeExecutable": "${execPath}",
+//       "args": [
+//         "--extensionDevelopmentPath=${workspaceRoot}"
+//       ],
+//       "sourceMaps": true,
+//       "outFiles": [
+//         "${workspaceRoot}/out/**/*.js"
+//       ],
+//       "preLaunchTask": "npm"
+//     }
+//   ]
+// }
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "extensionHost",
-      "request": "launch",
-      "name": "Launch Extension",
-      "runtimeExecutable": "${execPath}",
-      "args": [
-        "--extensionDevelopmentPath=${workspaceRoot}"
-      ],
-      "sourceMaps": true,
-      "outFiles": [
-        "${workspaceRoot}/out/**/*.js"
-      ],
-      "preLaunchTask": "npm"
-    }
-  ]
+    "version": "0.2.0",
+    "configurations": [{
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceRoot}/avg.js",
+            "cwd": "${workspaceRoot}",
+            "args": ["2", "4", "6", "8", "10"]
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach to Process",
+            "port": 5858
+        }
+    ]
 }
