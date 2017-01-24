@@ -2,14 +2,18 @@ var assert = require('assert');
 var run = require('./run.js');
 
 describe('day-greet app', function(){
-    it('has an hour value corresponding to the 24 hour military clock', function(){
-        it('cannot have an hour value less than 0', function(){
-            var output = run(['name', -1]);
-            assert.notEqual(output, 0);
+    describe('has an appropriate greeting depending on the time', function(){
+        it('greets with "afternoon" at/after 12:00', function(){
+            var output = run(['day-greet.js', 'name', '12:00']);
+            assert.equal(output, `good afternoon name`);
         });
-        it('cannot have an hour value more than 24', function(){
-            var output = run(['name, 25']);
-            assert.notEqual(output, 24);
-        });        
+        it('greets with "morning" at/after 00:00', function(){
+            var output = run(['day-greet.js', 'name', '00:00']);
+            assert.equal(output, `good morning name`);
+        });
+        it('greets with "evening" at/after 17:00', function(){
+            var output = run(['day-greet.js', 'name', '17:00']);
+            assert.equal(output, `good evening name`);
+        });
     });
 });
