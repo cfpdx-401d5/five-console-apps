@@ -7,4 +7,8 @@ it('add 1 to first argument', function() {
 
 it('test for NaN', function() {
     assert.equal(run(['add-one.js', 'foo']), 'NaN');
-})
+});
+
+it('test for negative numbers', function() {
+    assert.equal(run(['add-one.js', '-1']), '0');
+});
