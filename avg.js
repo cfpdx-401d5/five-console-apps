@@ -16,7 +16,6 @@ for (var i = firstArgIndex; i < process.argv.length; i++){
 sum = numArr.reduce(function(a,b){
     return a + b;
 }, 0);
-process.stdout.write(sum + '\n\n');
 
 average = sum/numArr.length;
 
