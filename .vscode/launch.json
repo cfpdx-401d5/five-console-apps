@@ -23,9 +23,6 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/avg.js",
-            "cwd": "${workspaceRoot}",
-            "args": ["2", "4", "6", "8", "10"]
         },
         {
             "type": "node",
