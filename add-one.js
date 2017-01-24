@@ -6,7 +6,6 @@
 // 4
 
 var num = process.argv[2];
-process.stdout.write(num);
-var addOne = num + 1;
+var addOne = Number(num) + 1;
 
 process.stdout.write(String(addOne)); // why does it print '%' after the output?
