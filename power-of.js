@@ -6,7 +6,6 @@
 // 27
 
 var base = Number(process.argv[2]);
-var exponent = base;
+var exponent = Number(process.argv[3]);
 
-//process.stdout.write(base);
 process.stdout.write(String(Math.pow(base, exponent)));
