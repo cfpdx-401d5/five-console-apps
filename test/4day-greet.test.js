@@ -28,6 +28,3 @@ describe('day-greet app', function() {
 
 // > node day-greet.js marty 17:01
 // good evening marty
-
-
-
