@@ -8,4 +8,9 @@ describe('fizz-buzz', function() {
     assert.equal(actual, '1\n2\nfizz\n4\nbuzz\nfizz\n7\n8\nfizz\nbuzz\n11\n');
   });
 
+  it('returns "" when the argument number is not a number', function() {
+    var actual = run(['fizz-buzz.js', 'seven']);
+    assert.equal(actual, '');
+  });
+
 });
