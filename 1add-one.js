@@ -1,3 +1,4 @@
+// + before turns to number - equiv to parseInt()
 var x = +process.argv[2];
 
 function addOne(x) {
