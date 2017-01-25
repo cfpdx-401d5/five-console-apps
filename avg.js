@@ -1,10 +1,14 @@
 // returns the average of all supplied arguments
-var argsTotal = process.argv.slice(2);
+var argsArray = process.argv.slice(2);
 
-var total = 0;
-
-for (var i = 0; i < argsTotal.length; i++) {
-  total += arguments[i];
-  total += 
+function getSum(total, num) {
+  return total + num;
 }
-var avg = total / argsTotal.length;
+
+for (var i = 0; i < argsArray.length; i++) {
+  // total += argsArray[i];
+   
+}
+var sumArray = argsArray.reduce(getSum);
+var avg = sumArray / argsArray.length;
+process.stdout.write(`${avg}`);
