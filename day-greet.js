@@ -11,6 +11,10 @@ if (12 <= time[0] && time[0] < 17) {
     process.stdout.write(`good afternoon ${name}`);
 }
 
-if (17 <= time[0]) {
+if (17 <= time[0] && time[0] < 22) {
     process.stdout.write(`good evening ${name}`);
+}
+
+if (time[0] < 5 || 22 <= time[0]) {
+    process.stdout.write(`go back to bed ${name}`);
 }
