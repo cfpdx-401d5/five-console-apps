@@ -1,4 +1,4 @@
-var x = parseInt(process.argv[2]);
+var x = +process.argv[2];
 
 function addOne(x) {
   return x + 1;
