@@ -14,8 +14,8 @@ describe('day-greet', function() {
   });
 
   it('returns time-appropriate greeting of "good evening" plus user-name for time between 17:00 and 24:00', function() {
-    var actual = run(['day-greet.js', 'tom', '14:30']);
-    assert.equal(actual, 'good afternoon tom');
+    var actual = run(['day-greet.js', 'tom', '19:30']);
+    assert.equal(actual, 'good evening tom');
   });
 
 });

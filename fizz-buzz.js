@@ -3,11 +3,14 @@ var n = process.argv[2];
 
 for (var i = 1; i <= n; i++) {
 
-  if (i % 3 === 0) {
+  if ((i % 3 === 0) && (i % 5 !== 0)) {
     process.stdout.write('fizz' + '\n');
   }
-  else if (i % 5 === 0) {
+  else if ((i % 5 === 0) && (i % 3 !==0)) {
     process.stdout.write('buzz' + '\n');
+  }
+  else if ((i % 3 === 0) && (i % 5 === 0)) { 
+    process.stdout.write('fizzbuzz' + '\n');
   }
   else {
     process.stdout.write(i + '\n');
