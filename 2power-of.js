@@ -5,4 +5,4 @@ function powerOf(x, y) {
     return Math.pow(x, y);
 };
 
-process.stdout.write(powerOf(x, y) + '\n'.toString());
+process.stdout.write(powerOf(x, y).toString());

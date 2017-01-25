@@ -1,8 +1,15 @@
-function dayGreet(name, time) {
-    if (time <= 7) {
-        process.stdout.write(`good morning ${name}`);
-    } else if (time <= 15) {
-        process.stdout.write(`good afternoon ${name}`);
+var name = process.argv[2];
+var time = +process.argv[3];
+var greeting = '';
+
+function dayGreet(time) {
+    if (time <= 9) {
+        return greeting = 'morning';
+    } else if (time <= 16) {
+        return greeting = 'afternoon';
     } else 
-        process.stdout.write(`good evening ${name}`);
-}
+        return greeting = 'evening';
+};
+dayGreet();
+
+process.stdout.write(`good ${greeting} ${name}`);
