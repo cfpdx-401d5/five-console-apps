@@ -1,5 +1,8 @@
 // returns the average of all supplied arguments
-var arguments = parseInt(process.argv[i]);
+var argsTotal = process.argv.slice(2);
+
+
+
 var total = 0;
 
 for (var i = 2; i < arguments.length; i++) {
