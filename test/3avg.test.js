@@ -1,10 +1,11 @@
-var child_process = require('child_process');
-var assert = require('assert');
-var threeAvg = require('../3avg.js');
 
-describe('test3', function() {
+var assert = require('assert');
+var run = require('./run.js');
+
+describe('avg app', function() {
     it('returns avg of all supplied arguments', function() {
-        args = [2, 4, 6, 8];
-        assert.equal(avg, 5);
+        var args = [3, 4, 6, 0, 3];
+        var output = run(['3avg.js', args]);
+        assert.equal(output, '3.2');
     })
 })
