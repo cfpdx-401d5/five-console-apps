@@ -1,10 +1,16 @@
-var x = process.argv[2];
-var y = process.argv[3];
-var z = process.argv[4];
+var x = [];
 
-var avg = (Number(x) + Number(y) + Number(z))/3;
+for(i = 2; i < process.argv.length; i++) {
+    x.push(parseInt(process.argv[i]));
+}
 
-process.stdout.write(String(avg));
+var sum = x.reduce(function(a, b) {
+    return a + b;
+}, 0);
+
+var avg = sum / (process.argv.length - 2);
+
+process.stdout.write(avg.toString());
 
 
 
